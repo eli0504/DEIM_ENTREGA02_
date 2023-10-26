@@ -9,6 +9,9 @@ public class Chessboard : MonoBehaviour
 
     private Tokens tokens;
 
+    public List<Vector3> listOfPosition = new List<Vector3>();
+   
+
 
     public Chessboard(int w, int h) //chess board size
     {
