@@ -7,11 +7,9 @@ public class Chessboard : MonoBehaviour
     private int width;
     private int height;
 
-    private Tokens tokens;
+    private Tokens tokens; //tokens script
 
-    public List<Vector3> listOfPosition = new List<Vector3>();
    
-
 
     public Chessboard(int w, int h) //chess board size
     {
@@ -25,9 +23,11 @@ public class Chessboard : MonoBehaviour
         this.tokens = tokens;
     }
 
-    private void SpawnTokens()
-    {
-
-    }
-
+    
 }
+
+        
+
+  
+
+    
