@@ -133,8 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 73846785}
   - component: {fileID: 73846784}
-  - component: {fileID: 73846783}
-  - component: {fileID: 73846782}
   - component: {fileID: 73846781}
   m_Layer: 0
   m_Name: Spawn
@@ -192,36 +190,6 @@ MonoBehaviour:
   - {x: -2, y: -2, z: 0}
   - {x: -3, y: -2, z: 0}
   tokensPrefab: {fileID: 1087209476944841244, guid: f9097f55b560c77408025020d4ecea30, type: 3}
---- !u!114 &73846782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73846780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05a1f2de5917a1b46b70cbf5c9c1d671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chessboard: {fileID: 0}
-  tokens: {fileID: 0}
-  gridPosition: {x: 0, y: 0}
---- !u!114 &73846783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73846780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38813a50e948bbd45a669e0fcd8e25dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  width: 0
-  height: 0
-  tokens: {fileID: 0}
 --- !u!114 &73846784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1822,7 +1790,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1408396572}
-  - component: {fileID: 1408396571}
   m_Layer: 0
   m_Name: chessboard
   m_TagString: Untagged
@@ -1830,21 +1797,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1408396571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408396570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38813a50e948bbd45a669e0fcd8e25dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  width: 0
-  height: 0
-  tokens: {fileID: 0}
 --- !u!4 &1408396572
 Transform:
   m_ObjectHideFlags: 0

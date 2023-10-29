@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2919472591498086492}
   - component: {fileID: 2363348506989502045}
   m_Layer: 0
-  m_Name: test
+  m_Name: tokenPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

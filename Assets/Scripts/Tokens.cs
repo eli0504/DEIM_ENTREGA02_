@@ -4,23 +4,19 @@ using UnityEngine;
 
 public class Tokens : MonoBehaviour
 {
-    private Transform pos;
-    public Vector3[] tokensPos = new Vector3[35]; //positions array
-    
 
+    public Vector3[] tokensPos = new Vector3[35]; //positions array
     public GameObject tokensPrefab;
     private int tokensIndex;
+
 
     private float gridMoveTimer;
     private float gridMoveTimerMax = 1f; //the token appears every 3 seconds
 
-    private bool isPaused = false;
-
-
     private void Update()
     {
         SpawnTokens();
-        
+       // EndGame();
     }
 
     private void SpawnTokens()
@@ -28,9 +24,9 @@ public class Tokens : MonoBehaviour
         gridMoveTimer += Time.deltaTime;
         if (gridMoveTimer >= gridMoveTimerMax)
         {
-            gridMoveTimer -= gridMoveTimerMax; // tempo se reinicia
+            gridMoveTimer -= gridMoveTimerMax; // the token appears every 3 seconds
 
-            
+
             //the token appears in random positions
             float posx = Random.Range(-3, 3);
             float posy = Random.Range(-2, 2);
@@ -39,18 +35,23 @@ public class Tokens : MonoBehaviour
             tokensIndex = Random.Range(0, tokensPos.Length);
             Instantiate(tokensPrefab, tokensPos[tokensIndex], Quaternion.identity);
         }
-        
+
+
     }
 
-    /*private void OccupiedPositions() //stop time when all positions are occupied
+    /*private void EndGame() //instantiation stop when all the squares on the chessboard are occupied
     {
-       if(tokensPrefab <= 35)
+        if (tokensPrefab >= 35)
         {
-            SpawnTokens();
+            Time.timeScale = 0;
+            Debug.Log("stop");
         }
         else
         {
-
+            SpawnTokens()
+            Debug.Log("play");
         }
     }*/
+
+    //He intentado resolver la función de mil maneras y no doy con la solución.
 }
