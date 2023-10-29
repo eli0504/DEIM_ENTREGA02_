@@ -863,9 +863,6 @@ MonoBehaviour:
   - {x: -2, y: -2, z: 0}
   - {x: -3, y: -2, z: 0}
   tokensPrefab: {fileID: 5015796108701196164, guid: bab34e747448e0b4e933af8dccbc6fe7, type: 3}
-  tokensIndex: 0
-  gridMoveTimer: 3
-  gridMoveTimerMax: 6
 --- !u!114 &480562337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1807,8 +1804,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1408396572}
   - component: {fileID: 1408396571}
-  - component: {fileID: 1408396574}
-  - component: {fileID: 1408396573}
   m_Layer: 0
   m_Name: chessboard
   m_TagString: Untagged
@@ -1878,31 +1873,6 @@ Transform:
   - {fileID: 1533328743}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1408396573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408396570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6e940925af269a4893e99d3834ce985, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tokenSprite: {fileID: 21300000, guid: 0e7c92b724e2f9a42bfd545811970b04, type: 3}
---- !u!114 &1408396574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408396570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05a1f2de5917a1b46b70cbf5c9c1d671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1413524824
 GameObject:
   m_ObjectHideFlags: 0
