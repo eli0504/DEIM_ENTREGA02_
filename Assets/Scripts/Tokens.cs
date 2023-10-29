@@ -8,12 +8,21 @@ public class Tokens : MonoBehaviour
 
     private Transform pos;
     public Vector3[] tokensPos; //positions array
+    
 
     public GameObject tokensPrefab;
+    public int tokensIndex;
 
-    private float gridMoveTimer;
-    private float gridMoveTimerMax = 3f;
+    public float gridMoveTimer = 3;
+    public float gridMoveTimerMax = 5f;
 
+    private void Start()
+    {
+        if (gridMoveTimer >= gridMoveTimerMax)
+        {
+            gridMoveTimer -= gridMoveTimerMax;
+        }
+    }
     private void Update()
     {
         SpawnTokens();
@@ -25,15 +34,12 @@ public class Tokens : MonoBehaviour
         float posy = Random.Range(-2, 2);
         Vector2 randomPos = new Vector2(posx, posy);
 
-        for (int i = 0; i < tokensPos.Length; i++)
-        {
+        //for (int i = 0; i < tokensPos.Length; i++)
+        //{
             int tokensIndex = Random.Range(0, tokensPos.Length);
             Instantiate(tokensPrefab, tokensPos[tokensIndex], tokensPrefab.transform.rotation);
-            if (gridMoveTimer >= gridMoveTimerMax)
-            {
-                gridMoveTimer -= gridMoveTimerMax;
-            }
-        }
+            
+        //}
     }
 
 
